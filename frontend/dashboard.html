@@ -1,0 +1,27 @@
+<!-- frontend/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bank Website</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <p>Welcome, <span id="username"></span>!</p>
+    <p>Your balance: $<span id="balance"></span></p>
+    <h2>Transfer Money</h2>
+    <form id="transferForm">
+        <label for="recipient">Recipient Username:</label>
+        <input type="text" id="recipient" required>
+        <br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required>
+        <br>
+        <button type="submit">Transfer</button>
+    </form>
+    <p id="message"></p>
+    <button id="logout">Logout</button>
+    <script src="script.js"></script>
+</body>
+</html>
